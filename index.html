@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HomePlanAI v1.1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🏠 HomePlanAI v1.1</h1>
+
+<div class="container">
+
+<h2>Create Smart House Plan</h2>
+
+<label>House Name</label>
+<input id="name" value="Green Villa">
+
+<label>Plot Size</label>
+<input id="size" placeholder="45x90">
+
+<label>Bedrooms</label>
+<input id="bedrooms" type="number" value="4">
+
+<label>Parking</label>
+<select id="parking">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Garden</label>
+<select id="garden">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Floors</label>
+<select id="floors">
+<option>1 Floor</option>
+<option>2 Floors</option>
+</select>
+
+<button onclick="generatePlan()">
+Generate Smart Plan
+</button>
+
+<button onclick="window.print()">
+📥 Download Plan
+</button>
+
+</div>
+
+<div class="container" id="result"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
